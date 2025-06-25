@@ -1,0 +1,39 @@
+.education_section > h1{
+    font-size: 2rem;
+    position: relative;
+    left: 190px;
+}
+.education_container{
+    /* border: 1px solid #ffff; */
+}
+.education_details_container{
+    position: relative;
+    left: 200px;
+    max-width: 700px;
+    border: 1px solid #ffff;
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    margin: 20px 10px;
+    border: none;
+    border-left: 3px solid #fff;
+}
+.education_details_container h2,.education_details_container h3{
+    margin: 1px 1px ;
+}
+.course_name span{
+    font-size: 20px;
+    margin: 0 10px;
+}
+.college_name span{
+    font-size: 14px;
+    margin: 0 15px;
+}
+.year{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.address{
+    font-size: 16px;
+    margin: 10px 15px;
+}
