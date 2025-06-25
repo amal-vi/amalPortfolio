@@ -4,7 +4,8 @@ import Navbar from './components/Navbar'
 import Hero from './pages/Hero'
 import Skills from './pages/Skills'
 import EducationSection from './pages/EducationSection'
-
+import Projects from './pages/Projects'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,8 @@ function App() {
       <Hero/>
       <Skills/>
       <EducationSection/>
+      <Projects/>
+      <Footer/>
     </>
   )
 }

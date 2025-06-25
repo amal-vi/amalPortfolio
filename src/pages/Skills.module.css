@@ -1,12 +1,16 @@
+.skills_section{
+    margin: 50px 0px;
+
+}
+.skills_section h1{
+    font-size: 2rem;
+    position: relative;
+    left: 190px;
+}
 .skills_container{
     /* border: 2px solid aqua; */
     height: auto;
-    padding-bottom: 70px;
-}
-.skills_container_head{
-    position: relative;
-    left: 190px;
-    top: 20px;
+
 }
 .skill_inner_container{
     display: grid;
@@ -25,11 +29,19 @@
     min-width: 150px;
     border-radius:5px ;
     background: transparent;
-    border: 1px solid #53B4F5;
-    position: relative;
+    /* border: 1px solid #53B4F5; */
     transition: 0.3s;
+}
+.skill_inner_container_items  img{
+    width: 40px;
+    position: relative;
+    left: -10px;
+}
+.mysql > img{
+    width: 60px;
+
 }
 .skill_inner_container_items > h3{
     position: relative;
-    left: 10px;
+    left: 0px;
 }

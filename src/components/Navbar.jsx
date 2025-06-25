@@ -8,7 +8,7 @@ import styles from "../components/Navbar.module.css";
 function Navbar() {
   return (
     <nav className={styles.nav_container}>
-      <h2 className={styles.nav_head}>Amal Vijayan</h2>
+      <h2 className={styles.nav_head}>Amal</h2>
       <ul className={styles.nav_ul}>
         <Link
           className={styles.nav_ul_items}
@@ -53,6 +53,7 @@ function Navbar() {
         </label>
       </div>
       </nav>
+
   );
 }
 

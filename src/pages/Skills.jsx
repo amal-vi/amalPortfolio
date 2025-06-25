@@ -7,50 +7,55 @@ import { RiReactjsLine } from "react-icons/ri";
 
 function Skills() {
   return (
-    <>
+    <section className={styles.skills_section}>
+            <h1>Skills</h1>
         <div className={styles.skills_container}>
-            <h1 className={styles.skills_container_head}>Skills</h1>
             <div className={styles.skill_inner_container}>
                 <div className={styles.skill_inner_container_items}>
-                    <FaHtml5 />
+                    <img src="/html.svg" alt="" />
                     <h3>HTML</h3>
                 </div>
                 <div className={styles.skill_inner_container_items}>
-                                        <FaCss3Alt />
+                                        <img src="/css.svg" alt="" />
                     <h3>CSS</h3>
                 </div>
+                 <div className={styles.skill_inner_container_items}>
+                                        <img src="/bootstrap.svg" alt="" />
+                    <h3>Bootstrap</h3>
+                </div>
                 <div className={styles.skill_inner_container_items}>
-                                        <FaJsSquare />
+                                        <img src="/js.svg" alt="" />
                     <h3>Javascript</h3>
                 </div>
                 <div className={styles.skill_inner_container_items}>
-                                        <RiReactjsLine />
+                                        <img src="/react.svg" alt="" />
                     <h3>React</h3>
                 </div>
                 <div className={styles.skill_inner_container_items}>
-                                        <FaPython />
-                    <h3>Python</h3>
+                                        <img src="/figma.svg" alt="" />
+                    <h3>Figma</h3>
                 </div>
                 <div className={styles.skill_inner_container_items}>
-                                        <FaDatabase />
-                    <h3>MySql</h3>
-                </div>
-                <div className={styles.skill_inner_container_items}>
-                                        <FaGitAlt />
+                                        <img src="/git.svg" alt="" />
                     <h3>Git</h3>
                 </div>
                 <div className={styles.skill_inner_container_items}>
-                                        <BsGithub />
+                                        <img src="/github.svg" alt="" />
                     <h3>Github</h3>
                 </div>
                 <div className={styles.skill_inner_container_items}>
-                                        <FaBootstrap />
-                    <h3>Bootstrap</h3>
+                                        <img src="/python.svg" alt="" />
+                    <h3>Python</h3>
                 </div>
-
+                <div className={`${styles.skill_inner_container_items} ${styles.mysql}`}>
+                                        <img src="/mysql.svg"  alt="" />
+                    <h3>MySql</h3>
+                </div>
+                
+               
             </div>
         </div>
-    </>
+    </section>
   )
 }
 

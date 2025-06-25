@@ -1,7 +1,9 @@
 #root {
   width: 100%;
-  background: #222831;
+  height: 100%;
   overflow: hidden;
+  
+  background: #222831;
 }
 
 
