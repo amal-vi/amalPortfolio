@@ -11,6 +11,7 @@ position: fixed;
 .nav_container > .nav_ul {
   position: relative;
   top: 5px;
+  right: 30px;
   list-style: none;
   padding: 0;
   display: flex;
@@ -26,6 +27,7 @@ position: fixed;
   color: #53B4F5;
 }
 .nav_head {
+
   position: relative;
   left: 20px;
 }
@@ -71,6 +73,10 @@ position: fixed;
     top: 60px;
     left: 20px;
     font-size: 20px;
+
+ }
+ .nav_head,.dark_mode_toggle{
+    font-family: "zen dots","sans-serif";
 
  }
  .switch {

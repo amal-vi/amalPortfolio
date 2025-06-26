@@ -1,36 +1,35 @@
 footer {
-    width: 100%;
-    height: 50vh;
-    /* border: 2px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #181818;
+  width: 100%;
+  height: 50vh;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #181818;
 }
 
-.owner{
-    color: #53B4F5;
+.owner {
+  color: #53b4f5;
 }
-
 
 .connectSection {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    font-size: 1.2rem;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 .icons {
-    color: #fff;
-    font-size: 30px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
 
 .icons:hover {
-    color: #53B4F5;
-    transform: scale(1.15);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  color: #53b4f5;
+  transform: scale(1.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }

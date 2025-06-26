@@ -1,6 +1,9 @@
 .education_section{
 margin: 50px 0px;
 }
+h2,h3,h5{
+    font-family: "oxanium","sans-serif";
+}
 .education_section > h1{
     font-size: 2rem;
     position: relative;

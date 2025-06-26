@@ -141,7 +141,17 @@
     position: relative;
     z-index: 2;
 }
-
+/* .intro_head_primary,.intro_head_secondary{
+    font-family: "zen dots","sans-serif";
+} */
+.role,p,.btn_contact{
+    font-family:  "Oxanium", "sans-serif";
+}
+p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
 .intro_head_primary{
     font-size:40px ;
     margin: 0 0;
