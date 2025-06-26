@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaInstagram } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin, FiSettings } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import styles from "../components/Navbar.module.css";
+import { IoFlashlightOutline } from "react-icons/io5";
+
+
+
 function Navbar() {
+
+
   return (
     <nav className={styles.nav_container}>
-      <h2 className={styles.nav_head}>AMAL</h2>
+      <img src="/favicon.png"  className={styles.nav_head}/>
       <ul className={styles.nav_ul}>
         <Link
           className={styles.nav_ul_items}
@@ -41,17 +47,10 @@ function Navbar() {
           </li>
         </Link>
       </ul>
-      <input type="checkbox" id="menu_burger" className={styles.menu_burger} />
-      <label htmlFor="menu_burger" className={styles.nav_setting_icon}>
-        <FiSettings />
+      <input type="checkbox" id="menu_burger"  className={styles.dark_mode} />
+      <label htmlFor="dark_mode" className={styles.nav_dark_mode_icon}>
+        <IoFlashlightOutline />
       </label>
-      <div className={styles.nav_setting}>
-        <span className={styles.dark_mode_toggle}>Dark Mode</span>
-        <label className={styles.switch}>
-          <input type="checkbox" />
-          <span className={`${styles.slider} ${ styles.round}`}></span>
-        </label>
-      </div>
       </nav>
 
   );
