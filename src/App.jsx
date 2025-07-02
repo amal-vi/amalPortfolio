@@ -7,15 +7,20 @@ import EducationSection from './pages/EducationSection'
 import Projects from './pages/Projects'
 import Footer from './components/Footer'
 
+import { Routes,Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+
 function App() {
   return (
     <>
       <Navbar/>
-      <Hero/>
-      <Skills/>
-      <EducationSection/>
-      <Projects/>
-      <Footer/>
+      
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+            <Footer/>
+
     </>
   )
 }

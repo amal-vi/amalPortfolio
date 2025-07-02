@@ -27,9 +27,10 @@ h3{
 .skill_inner_container_items{
     background: black;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     min-width: 150px;
+    padding: 10px 10px;
     border-radius:5px ;
     background: transparent;
     /* border: 1px solid #53B4F5; */
@@ -42,9 +43,17 @@ h3{
 }
 .mysql > img{
     width: 60px;
+    position: relative;
+    left: -15px;
 
 }
+
 .skill_inner_container_items > h3{
     position: relative;
     left: 0px;
+
+}
+.mysql > h3{
+    position: relative;
+    left: -15px;
 }

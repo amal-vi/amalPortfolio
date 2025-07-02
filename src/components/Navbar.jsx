@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { FaInstagram } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { FiLinkedin, FiSettings } from "react-icons/fi";
@@ -14,11 +13,11 @@ function Navbar() {
 
   return (
     <nav className={styles.nav_container}>
-      <img src="/favicon.png"  className={styles.nav_head}/>
+      <Link to='/'><img src="/favicon.png"  className={styles.nav_head}/></Link>
       <ul className={styles.nav_ul}>
         <Link
           className={styles.nav_ul_items}
-          to="https://instagram.com"
+          to="https://www.instagram.com/_amal_vi/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -28,7 +27,7 @@ function Navbar() {
         </Link>
         <Link
           className={styles.nav_ul_items}
-          to="https://github.com"
+          to="https://github.com/amal-vi"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -38,7 +37,7 @@ function Navbar() {
         </Link>
         <Link
           className={styles.nav_ul_items}
-          to="https://linkedin.com"
+          to="https://www.linkedin.com/in/contactamal/"
           target="_blank"
           rel="noopener noreferrer"
         >

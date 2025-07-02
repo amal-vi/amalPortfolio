@@ -1,5 +1,6 @@
-import React from 'react'
+
 import styles from "../pages/Hero.module.css";
+import { Link, Navigate } from 'react-router-dom';
 import { FaHtml5 ,FaCss3Alt,FaJsSquare,FaReact } from "react-icons/fa";
 
 
@@ -12,7 +13,7 @@ function Hero() {
             <h1 className={styles.intro_head_secondary}>I'm Amal</h1>
             <span className={styles.role}>I'm a Frontend Dev</span>
             <p>Hello, I'm Amal , a aspiring frontend developer. I hold a diploma in computer engineering and am currently pursuing a B.Tech degree in computer science and engineering. My passion for coding and creating user-friendly interfaces drives my ambition to excel in the world of frontend development. Let's embark on this journey together!</p>
-            <button className={styles.btn_contact}>Contact</button>
+            <Link className={styles.btn_contact} to='mailto:amalgivi@gmail.com'>Contact</Link>
         </div>
         <div className={styles.hero_container_image}>
             <div className={styles.image_outer_circle}>
