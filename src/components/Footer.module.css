@@ -11,7 +11,9 @@ footer {
 .owner {
   color: #53b4f5;
 }
-
+.owner:hover{
+  color: #0491ef;
+}
 .connectSection {
   display: flex;
   align-items:center;
