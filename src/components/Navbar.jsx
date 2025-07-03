@@ -1,7 +1,7 @@
-
+import React ,{useEffect,useState} from 'react'
 import { FaInstagram } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
-import { FiLinkedin, FiSettings } from "react-icons/fi";
+import { FiLinkedin } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import styles from "../components/Navbar.module.css";
 import { IoFlashlightOutline } from "react-icons/io5";
@@ -10,6 +10,14 @@ import { IoFlashlightOutline } from "react-icons/io5";
 
 function Navbar() {
 
+  const [isDarkMode , setIsDarkMode]=useState(true);
+  useEffect (()=>{
+    document.body.className = isDarkMode? 'dark_theme' : 'light_theme';
+  },[isDarkMode]);
+
+  const handleToggle = ()=>{
+    setIsDarkMode(prev=>!prev);
+  }
 
   return (
     <nav className={styles.nav_container}>
@@ -46,9 +54,14 @@ function Navbar() {
           </li>
         </Link>
       </ul>
-      <input type="checkbox" id="menu_burger"  className={styles.dark_mode} />
-      <label htmlFor="dark_mode" className={styles.nav_dark_mode_icon}>
-        <IoFlashlightOutline />
+      <input type="checkbox" id="menu_burger" checked={isDarkMode}   onChange={() => {
+    console.log('Toggling:', !isDarkMode);
+    setIsDarkMode(!isDarkMode);
+  }}  className={styles.dark_mode} />
+      <label htmlFor='menu_burger' className={styles.nav_dark_mode_icon}>
+        <IoFlashlightOutline
+  className={`${styles.nav_icon} ${isDarkMode ? styles.iconDark : styles.iconLight}`}
+/>
       </label>
       </nav>
 

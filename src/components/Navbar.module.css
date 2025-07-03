@@ -50,3 +50,11 @@ position: fixed;
  .dark_mode:checked ~ .nav_dark_mode_icon{
   color: #53B4F5;
  }
+
+ .iconDark {
+  color: #53B4F5;
+}
+
+.iconLight {
+  color: white;
+}

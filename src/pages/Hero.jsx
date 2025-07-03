@@ -1,10 +1,15 @@
-
+import React ,{useEffect,useState} from 'react'
 import styles from "../pages/Hero.module.css";
 import { Link, Navigate } from 'react-router-dom';
 import { FaHtml5 ,FaCss3Alt,FaJsSquare,FaReact } from "react-icons/fa";
 
 
 function Hero() {
+      const [isDarkMode , setIsDarkMode]=useState(true);
+      useEffect (()=>{
+        document.body.className = isDarkMode? 'dark_theme' : 'light_theme';
+      },[isDarkMode]);
+      
   return (
     <section className={styles.hero_section}>
     <div className={styles.hero_container}>
@@ -13,7 +18,7 @@ function Hero() {
             <h1 className={styles.intro_head_secondary}>I'm Amal</h1>
             <span className={styles.role}>I'm a Frontend Dev</span>
             <p>Hello, I'm Amal , a aspiring frontend developer. I hold a diploma in computer engineering and am currently pursuing a B.Tech degree in computer science and engineering. My passion for coding and creating user-friendly interfaces drives my ambition to excel in the world of frontend development. Let's embark on this journey together!</p>
-            <Link className={styles.btn_contact} to='mailto:amalgivi@gmail.com'>Contact</Link>
+            <Link  to='mailto:amalgivi@gmail.com' className={`${styles.btn_contact} ${isDarkMode ? styles.contactDark : styles.contactLight}`}>Contact</Link>
         </div>
         <div className={styles.hero_container_image}>
             <div className={styles.image_outer_circle}>
